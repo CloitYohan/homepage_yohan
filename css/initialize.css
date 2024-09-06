@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	src: url('../data/fonts/Pretendard-Black.woff2') format('woff2'), 
+	url('../data/fonts/Pretendard-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	src: url('../data/fonts/Pretendard-ExtraBold.woff2') format('woff2'), 
+	url('../data/fontsPretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	src: url('../data/fonts/Pretendard-Bold.woff2') format('woff2'), 
+	url('../data/fonts/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	src: url('../data/fonts/Pretendard-SemiBold.woff2') format('woff2'),
+	url('../data/fonts/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: url('../data/fonts/Pretendard-Medium.woff2') format('woff2'), 
+	url('../data/fonts/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	src: url('../data/fonts/Pretendard-Regular.woff2') format('woff2'), 
+	url('../data/fonts/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	src: url('../data/fonts/Pretendard-Light.woff2') format('woff2'), 
+	url('../data/fonts/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	src: url('../data/fonts/Pretendard-ExtraLight.woff2') format('woff2'), 
+	url('../data/fonts/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	src: url('../data/fonts/Pretendard-Thin.woff2') format('woff2'), 
+	url('../data/fonts/Pretendard-Thin.woff') format('woff');
+}
+
+
+h1 {font-family: 'Pretendard', sans-serif;}
+
+body,input,textarea,select,button, td, p, div, dl, dt, dd {text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-moz-font-feature-settings:"liga", "kern"}
+body {font:16px/normal 'Pretendard', 'Malgun Gothic', '맑은 고딕', 'Dotum', '돋움', sans-serif; color:#000; font-weight:400;letter-spacing:-.05rem;}
+/* initialize */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, *:before, *:after {margin: 0; padding: 0; border: 0; outline: 0; background: transparent; -webkit-text-size-adjust:none; word-break:keep-all; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+
+legend {width: 0; height: 0; position: absolute; top: 0; left: 0; display: none; }
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary {display: block;}
+nav, menu, ul, ol, dl, li {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: ''; content: none;}
+a {color:#000; text-decoration:none;}
+a:visited {text-decoration:none;}
+a:active,
+a:hover {text-decoration:none;}
+a:-webkit-any-link {text-decoration:none; color: #000;}
+small {font-size:0.9em;}
+ins {background-color: #ff9; color: #000; text-decoration: none;}
+mark {background-color: #ff9; color: #000; font-weight: bold;}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+table {width:100%; border:0 none; table-layout:fixed; border-collapse: collapse;}
+table td, table th {padding:0; border:0 none;}
+/*hr, legend {visibility:hidden; height:1px; width:1px; position:absolute; line-height:0;}*/
+h1, h2, h3, h4, h5, h6 {font-weight:700;}
+strong {font-weight:700;}
+img {max-width: 100%;}
+button {border:none;}
+button:focus {outline: none;}
+input:focus,botton:focus,select:focus,textarea:focus{outline:none;}
+
+input, select, textarea, button {font:16px/normal 'Pretendard','Malgun Gothic', '맑은 고딕', 'Dotum', '돋움', sans-serif; color:#333; vertical-align:middle; padding:0; margin:0; resize:none; font-weight:400; box-sizing:border-box; letter-spacing:-.3px;}
+input[type=text],
+input[type=password],
+input[type=file],
+input[type=email],
+input[type=number],
+input[type=search] {display:block; width:100%; padding:.75em 1em; border:none; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; appearance:none;-webkit-border-radius:7px;box-sizing:border-box}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance:none;margin:0}
+textarea {width:100%; padding:1em; border:1px solid #cdcdcd; background:#fff; line-height:1.4; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; appearance:none; line-height:normal;}
+input[type=text]:focus,input[type=password]:focus,input[type=email]:focus,input[type=number]:focus,textarea:focus {outline: 0 none;}
+input[type=checkbox], input[type=radio] {width:20px; height:20px; vertical-align:top; cursor:pointer;}
+input[type=submit], input[type=image], input[type=reset],{cursor:pointer; border:0 none; background:none; border-radius:7px; -webkit-border-radius:7px; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; appearance:none; outline:0 none;}
+button{cursor:pointer; border:0 none; background:none; border-radius:0px; -webkit-border-radius:0px; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; appearance:none; outline:0 none;}
+
+
+::-webkit-input-placeholder {color:#a9a9a9;}
+:-moz-placeholder {color:#a9a9a9;}
+::-moz-placeholder {color:#a9a9a9;}
+:-ms-input-placeholder {color:#a9a9a9;}
