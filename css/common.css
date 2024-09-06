@@ -705,7 +705,9 @@
 }
 
 .solution-inner .solution-box {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 49%;
   padding: 3rem;
   border-radius: 2rem;
@@ -713,6 +715,46 @@
   box-sizing: border-box;
   transition: 0.3s;
 }
+
+
+.solution-inner .solution-box .text-container {
+  width: 70%;
+}
+.solution-inner .solution-box .text-container .box-tit {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.solution-inner .solution-box .text-container .box-txt {
+  padding: 1.35rem 0;
+  line-height: 1.55;
+  font-size: 1rem;
+  color: #747474;
+}
+
+.solution-inner .solution-box:hover .text-container .txt-btn {
+  color: #214A5D;
+}
+
+
+.solution-inner .solution-box .text-container .txt-btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.solution-inner .solution-box .image-container {
+  width: 35%;
+}
+
+.solution-inner .solution-box .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+
 
 .solution-inner .solution-box:hover {
   transform: translateY(-0.5rem);
@@ -725,29 +767,7 @@
   margin-top: 1.5rem;
 }
 
-.solution-inner .solution-box:hover .txt-btn {
-  color: #214A5D;
-}
 
-.solution-inner .solution-box .box-tit {
-  font-size: 1.375rem;
-  font-weight: 700;
-}
-
-.solution-inner .solution-box .box-txt {
-  padding: 1.35rem 0;
-  line-height: 1.55;
-  font-size: 1rem;
-  color: #747474;
-}
-
-.solution-inner .solution-box .txt-btn {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #a0a0a0;
-  text-transform: uppercase;
-  transition: 0.3s;
-}
 
 .particle-area .solution-box {
   border: 1px solid #dfefff;
@@ -1265,9 +1285,10 @@ ul.tab-btn li.current {
   position: relative;
   width: 100%;
   height: 65rem;
+  top: 1rem;
   max-width: 870px;
-  margin: 3rem auto 2rem;
-  padding-top: 7.8rem;
+  margin: 2rem auto 2rem;
+  padding-top: 3rem;
   background: url(../images/img/bg-history.svg) 50% 0/100% no-repeat;
 }
 
@@ -1285,6 +1306,7 @@ ul.tab-btn li.current {
 
 .history-wrap.on {
   height: 100%;
+  top: 1rem;
 }
 
 .history-wrap.on:after {
@@ -1297,6 +1319,7 @@ ul.tab-btn li.current {
 
 .history-wrap .year-wrap {
   width: 180px;
+  top: 1rem;
   border-right: 3px solid #214A5D;
 }
 
@@ -1311,17 +1334,17 @@ ul.tab-btn li.current {
   content: '';
   display: block;
   position: absolute;
-  top: -0.15rem;
+  top: 0rem;
   right: 0;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 10rem;
   background: #214A5D;
   transform: translateX(calc(50% + 1.5px));
 }
 
 .history-wrap .con-wrap {
-  padding: 7rem 0 5rem;
+  padding: 3rem 0 3rem;
   text-align: left;
   max-width: 70%;
 }
@@ -5906,6 +5929,12 @@ body {
 
 
 .call-modal .phone {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.call-modal .email {
   color: #000000;
   font-size: 20px;
   font-weight: 400;

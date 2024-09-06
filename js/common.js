@@ -244,14 +244,14 @@ $(document).ready(function () {
   $('body').append(`
     <div class="call-modal">
       <div class="close" onclick="$('.call-modal').removeClass('show')">
-        <img src="/images/img/workway-con11.png" alt="Close Button">
+        <img src="/images/img/close.png" alt="Close Button">
       </div>
       <div class="img-box2"> 
           
       </div>
       
       <div class="title">Yohan Do</div>
-      <div class="phone">Email: ydo@gmu.edu</div>
+      <div class="email">Email: ydo@gmu.edu</div>
       <div class="phone">Phone: 010-9903-7702</div>
     </div>
   `);
@@ -262,7 +262,19 @@ $(document).ready(function () {
     );
 
     if (isMobile) {
-      window.open('tel:010-9903-7702');
+      $('.call-modal').toggleClass('show');
+
+      
+      $('.phone').on('click', function() {
+        window.open('tel:010-9903-7702');
+      });
+      
+      $('.email').on('click', function() {
+        const email = 'ydo@gmu.edu'; // 받는 사람의 이메일 주소
+        const mailtoLink = `mailto:${email}`;
+        window.open(mailtoLink);
+      });
+
     } else {
       $('.call-modal').toggleClass('show');
     }
