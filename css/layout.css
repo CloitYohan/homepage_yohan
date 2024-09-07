@@ -20,7 +20,7 @@ body {overflow-x:hidden;}
 .header-inner .hd-group nav ul li.active > a{position:relative;}
 .header-inner .hd-group nav ul li.active > a:before{content:"";display:block;position:absolute;bottom:0;left:0;right:0;border-bottom:2px solid #fff;}
 
-.header-inner .hd-item-sub{display:none;position:absolute;top:4rem;left:0;right:0;color:#fff;z-index:9001}
+.header-inner .hd-item-sub{display:none;position:absolute;top:4rem;left: -10rem;right:0;color:#fff;z-index:9001}
 .header-inner .hd-item-sub ul{max-width:1320px;margin:0 auto;}
 .header-inner .hd-group nav ul li .hd-item-sub a{display:block;height:4rem;line-height:4rem;color:#000;font-size:.95rem;letter-spacing:-0.3px;white-space:nowrap;}
 .header-inner .hd-group nav ul li .hd-item-sub a:hover{color:#214A5D}
@@ -81,14 +81,16 @@ body {overflow-x:hidden;}
 
 #footer{background:#05173D}
 
-#footer .ft-inner{position:relative;width:100%;max-width:1320px;margin:0 auto;background:url(../images/img/cat-face.png)100% 100%/22rem no-repeat}
+#footer .ft-inner{position:relative;width:100%;max-width:1320px;margin:0 auto;background:url(../images/img/character2.png)80% 60%/15rem no-repeat}
 #footer .inner-width{padding:7rem 0 5rem;}
 #footer .inner-width .con-wrap{display:flex;justify-content:space-between;align-items:center;}
 #footer .ft-logo{position:absolute;width:8.438rem;height:8.438rem;border-radius:20rem;background:#214A5D url(../images/img/logo-name-white.svg)50%/6.5rem no-repeat;text-indent:-999rem;transform:translateY(-50%);}
 
-#footer .inner-width .ft-left{display:flex;}
+#footer .inner-width .ft-left{
+  display: flex;
+  flex-direction: column; /* 자식 요소를 수직으로 쌓기 */}
 #footer .inner-width .ft-left > div{padding-right:4rem}
-#footer .inner-width .ft-left a{display:block;font-size:.95rem;font-weight:400;}
+#footer .inner-width .ft-left a{display:block;font-size:.95rem;font-weight:400; order: 0;}
 
 #footer p, #footer a{padding:.5rem 0;color:#fff;font-size:.925rem;font-weight:200;}
 #footer .txt-bold{font-weight:500}

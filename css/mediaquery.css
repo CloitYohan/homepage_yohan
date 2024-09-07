@@ -215,7 +215,7 @@
     font-size: 1.125rem;
   }
   #footer .inner-width .ft-left {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-left: 1rem;
   }
   #footer .inner-width .ft-left > div:first-child {

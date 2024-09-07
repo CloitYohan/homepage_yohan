@@ -1325,6 +1325,7 @@ ul.tab-btn li.current {
 
 .history-wrap .year-wrap .year {
   position: relative;
+  top: -1rem;
   font-size: 2.25rem;
   font-weight: 700;
   color: #214A5D;
@@ -1334,7 +1335,7 @@ ul.tab-btn li.current {
   content: '';
   display: block;
   position: absolute;
-  top: 0rem;
+  top: 0.4rem;
   right: 0;
   width: 2rem;
   height: 2rem;
